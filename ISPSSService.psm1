@@ -1,7 +1,5 @@
-
 $subdomainApiUrl = $null
 $headers = @{}
-
 
 function Get-Token {
     [CmdletBinding()]
