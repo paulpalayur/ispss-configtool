@@ -1,0 +1,80 @@
+{
+    "plinks": [
+        {
+            "Entities": [
+                "@{Type=PolicyLink; Key=/Policy/Policy for Identity Administrators; IsForeignKey=False}"
+            ],
+            "Row": {
+                "Params": "",
+                "ID": "/Policy/Policy for Identity Administrators",
+                "EnableCompliant": true,
+                "Description": "",
+                "LinkType": "Inactive",
+                "PolicySet": "/Policy/Policy for Identity Administrators"
+            }
+        },
+        {
+            "Entities": [
+                "@{Type=PolicyLink; Key=/Policy/Policy for Privilege Cloud Users; IsForeignKey=False}"
+            ],
+            "Row": {
+                "Params": "",
+                "ID": "/Policy/Policy for Privilege Cloud Users",
+                "EnableCompliant": true,
+                "Description": "This Policy is for Privilege Cloud Users",
+                "LinkType": "Inactive",
+                "PolicySet": "/Policy/Policy for Privilege Cloud Users"
+            }
+        },
+        {
+            "Entities": [
+                "@{Type=PolicyLink; Key=/Policy/Default Policy; IsForeignKey=False}"
+            ],
+            "Row": {
+                "ID": "/Policy/Default Policy",
+                "EnableCompliant": true,
+                "I18NDescriptionTag": "_I18N_DefaultGlobalPolicyDescriptionTag",
+                "Description": "The default policy contains all security settings related to enforcement of Adaptive MFA, SSO, RADIUS, and other Identity related configurations.",
+                "LinkType": "Global",
+                "PolicySet": "/Policy/Default Policy"
+            }
+        }
+    ],
+    "policy": {
+        "Description": "This Policy is for Privilege Cloud Users",
+        "Newpolicy": true,
+        "Path": "/Policy/Policy for Privilege Cloud Users",
+        "Settings": {
+            "/Core/Authentication/AllowIwa": true,
+            "/Core/Authentication/AllowLoginMfaCache": true,
+            "/Core/Authentication/AllowZso": true,
+            "/Core/Authentication/AuthenticationRulesDefaultProfileId": "8c5ebac2-f7bb-45ed-bee3-dcc049335548",
+            "/Core/Authentication/AuthSessionMaxConcurrent": 0,
+            "/Core/Authentication/ConfigureSecurityQuestions": false,
+            "/Core/Authentication/ContinueFailedSessions": true,
+            "/Core/Authentication/CookieAllowPersist": false,
+            "/Core/Authentication/FederatedLoginAllowsMfa": false,
+            "/Core/Authentication/FederatedLoginSatisfiesAllMechs": false,
+            "/Core/Authentication/IwaSatisfiesAllMechs": false,
+            "/Core/Authentication/IwaSetKnownEndpoint": false,
+            "/Core/Authentication/MfaSessionOobRetryEnabled": false,
+            "/Core/Authentication/NoMfaMechLogin": false,
+            "/Core/Authentication/OathPassCodePromptInMfaSetupWizard": true,
+            "/Core/Authentication/RequiredFactorSetupCount": 1,
+            "/Core/Authentication/SkipMechsInFalseAdvance": true,
+            "/Core/Authentication/TransferOwnership": false,
+            "/Core/Authentication/ZsoSatisfiesAllMechs": false,
+            "/Core/Authentication/ZsoSetKnownEndpoint": false,
+            "/Core/Authentication/ZsoSkipChallenge": true,
+            "/Core/MfaRestrictions/BlockMobileMechsOnMobileLogin": false,
+            "/Core/PhoneAuth/UserChangeAllow": false,
+            "/Core/Security/CDS/ExternalMFA/ShowQRCode": true,
+            "/Core/Security/CDS/ExternalMFA/ShowQRCode/AutoSetupOathOtp": true,
+            "/Core/Security/CDS/ExternalMFA/ShowQRCodeForSelfService": true,
+            "/Core/Security/CDS/ExternalMFA/UiPrompt": "OATH OTP Client",
+            "/Mobile/EnrollRules/Common/AllowEnrollment": true,
+            "AuthenticationEnabled": true
+        },
+        "Version": 1
+    }
+}

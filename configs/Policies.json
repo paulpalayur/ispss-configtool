@@ -1,0 +1,59 @@
+{
+    "PCloudUsers" : {
+            "Description": "This Policy is for Privilege Cloud Users",
+            "Newpolicy": true,
+            "Path": "/Policy/Policy for Privilege Cloud Users",
+            "Settings": {
+                "/Core/Authentication/AllowIwa": true,
+                "/Core/Authentication/AllowLoginMfaCache": true,
+                "/Core/Authentication/AllowZso": true,
+                "/Core/Authentication/AuthenticationRulesDefaultProfileId": "PCLOUDAUTHPROFILEUUID",
+                "/Core/Authentication/AuthSessionMaxConcurrent": 0,
+                "/Core/Authentication/ConfigureSecurityQuestions": false,
+                "/Core/Authentication/ContinueFailedSessions": true,
+                "/Core/Authentication/CookieAllowPersist": false,
+                "/Core/Authentication/FederatedLoginAllowsMfa": false,
+                "/Core/Authentication/FederatedLoginSatisfiesAllMechs": false,
+                "/Core/Authentication/IwaSatisfiesAllMechs": false,
+                "/Core/Authentication/IwaSetKnownEndpoint": false,
+                "/Core/Authentication/MfaSessionOobRetryEnabled": false,
+                "/Core/Authentication/NoMfaMechLogin": false,
+                "/Core/Authentication/OathPassCodePromptInMfaSetupWizard": true,
+                "/Core/Authentication/RequiredFactorSetupCount": 1,
+                "/Core/Authentication/SkipMechsInFalseAdvance": true,
+                "/Core/Authentication/TransferOwnership": false,
+                "/Core/Authentication/ZsoSatisfiesAllMechs": false,
+                "/Core/Authentication/ZsoSetKnownEndpoint": false,
+                "/Core/Authentication/ZsoSkipChallenge": true,
+                "/Core/MfaRestrictions/BlockMobileMechsOnMobileLogin": false,
+                "/Core/PhoneAuth/UserChangeAllow": false,
+                "/Core/Security/CDS/ExternalMFA/ShowQRCode": true,
+                "/Core/Security/CDS/ExternalMFA/ShowQRCode/AutoSetupOathOtp": true,
+                "/Core/Security/CDS/ExternalMFA/ShowQRCodeForSelfService": true,
+                "/Core/Security/CDS/ExternalMFA/UiPrompt": "OATH OTP Client",
+                "/Mobile/EnrollRules/Common/AllowEnrollment": true,
+                "AuthenticationEnabled": true
+            },
+            "Version": 1
+    },
+    "IdentityAdmins":{
+        "Description": "",
+        "Newpolicy": true,
+        "Path": "/Policy/Policy for Identity Administrators",
+        "Settings": {
+            "/Core/Authentication/AdminService/Portal/Strong/Authentication/DefaultProfileId": "IDENTITYAUTHPROFILEUUID",
+            "/Core/Authentication/AdminService/Portal/Strong/Authentication/Enabled": true,
+            "/Core/Authentication/ConfigureSecurityQuestions": false,
+            "/Core/Authentication/OathPassCodePromptInMfaSetupWizard": true,
+            "/Core/Authentication/RequiredFactorSetupCount": 1,
+            "/Core/Authentication/TransferOwnership": false,
+            "/Core/PhoneAuth/UserChangeAllow": false,
+            "/Core/Security/CDS/ExternalMFA/ShowQRCode": true,
+            "/Core/Security/CDS/ExternalMFA/ShowQRCode/AutoSetupOathOtp": true,
+            "/Core/Security/CDS/ExternalMFA/ShowQRCodeForSelfService": true,
+            "/Core/Security/CDS/ExternalMFA/UiPrompt": "OATH OTP Client",
+            "/Mobile/EnrollRules/Common/AllowEnrollment": true
+        },
+        "Version": 1
+    }
+}
